@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>
+	<fieldset name="general"
+		label="COM_PAGEBUILDERCK_GENERAL_LABEL"
+		description="COM_PAGEBUILDERCK_GENERAL_DESC"
+		addfieldpath="/administrator/components/com_pagebuilderck/elements"
+	>
+		<field
+			name="imagespath"
+			type="text"
+			label="COM_PAGEBUILDERCK_IMAGES_PATH_LABEL"
+			description="COM_PAGEBUILDERCK_IMAGES_PATH_DESC"
+			default="images/pagebuilderck"
+		/>
+		<field
+			name="imagespathexclusive"
+			type="radio"
+			label="COM_PAGEBUILDERCK_IMAGES_PATH_EXCLUSIVE_LABEL"
+			description="COM_PAGEBUILDERCK_IMAGES_PATH_EXCLUSIVE_DESC"
+			default="0"
+			class="btn-group"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field
+			name="loadfontawesome"
+			type="radio"
+			label="COM_PAGEBUILDERCK_LOADFONTAWESOME_LABEL"
+			description="COM_PAGEBUILDERCK_LOADFONTAWESOME_DESC"
+			default="1"
+			class="btn-group"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field
+			name="fixedwidthresolution"
+			type="text"
+			label="COM_PAGEBUILDERCK_FIXED_WIDTH_RESOLUTION_LABEL"
+			description="COM_PAGEBUILDERCK_FIXED_WIDTH_RESOLUTION_DESC"
+			default="1000"
+		/>
+		<field
+			name="nestedrows"
+			type="radio"
+			label="COM_PAGEBUILDERCK_NESTEDROWS_LABEL"
+			description="COM_PAGEBUILDERCK_NESTEDROWS_DESC"
+			default="0"
+			class="btn-group"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field
+			name="tooltips"
+			type="radio"
+			label="COM_PAGEBUILDERCK_TOOLTIPS_LABEL"
+			description="COM_PAGEBUILDERCK_TOOLTIPS_DESC"
+			default="1"
+			class="btn-group"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field
+			name="image_path_fix"
+			type="radio"
+			label="COM_PAGEBUILDERCK_IMAGE_PATH_FIX_LABEL"
+			description="COM_PAGEBUILDERCK_IMAGE_PATH_FIX_DESC"
+			default="0"
+			class="btn-group"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field
+			name="spacer1"
+			type="spacer"
+			hr="true"
+		/>
+		<field
+			name="colorpalette1"
+			type="color"
+			label="COM_PAGEBUILDERCK_COLOR_PALETTE"
+			description="COM_PAGEBUILDERCK_COLOR_PALETTE_DESC"
+			default=""
+		/>
+		<field
+			name="colorpalette2"
+			type="color"
+			label="COM_PAGEBUILDERCK_COLOR_PALETTE"
+			description="COM_PAGEBUILDERCK_COLOR_PALETTE_DESC"
+			default=""
+		/>
+		<field
+			name="colorpalette3"
+			type="color"
+			label="COM_PAGEBUILDERCK_COLOR_PALETTE"
+			description="COM_PAGEBUILDERCK_COLOR_PALETTE_DESC"
+			default=""
+		/>
+		<field
+			name="colorpalette4"
+			type="color"
+			label="COM_PAGEBUILDERCK_COLOR_PALETTE"
+			description="COM_PAGEBUILDERCK_COLOR_PALETTE_DESC"
+			default=""
+		/>
+		<field
+			name="colorpalette5"
+			type="color"
+			label="COM_PAGEBUILDERCK_COLOR_PALETTE"
+			description="COM_PAGEBUILDERCK_COLOR_PALETTE_DESC"
+			default=""
+		/>
+		<field
+			name="frontedition"
+			type="radio"
+			label="COM_PAGEBUILDERCK_FRONTEDITION_LABEL"
+			description="COM_PAGEBUILDERCK_FRONTEDITION_DESC"
+			default="0"
+			class="btn-group"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field
+			name="loadeditorcss"
+			type="radio"
+			label="COM_PAGEBUILDERCK_LOAD_EDITORCSS_LABEL"
+			description="COM_PAGEBUILDERCK_LOAD_EDITORCSS_DESC"
+			default="0"
+			class="btn-group"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+	</fieldset>
+
+	<fieldset name="responsive"
+		label="COM_PAGEBUILDERCK_RESPONSIVE_LABEL"
+	>
+		<field
+			name="responsive4value"
+			type="text"
+			label="COM_PAGEBUILDERCK_RESPONSIVE4_LABEL"
+			default="800"
+		/>
+		<field
+			name="responsive3value"
+			type="text"
+			label="COM_PAGEBUILDERCK_RESPONSIVE3_LABEL"
+			default="640"
+		/>
+		<field
+			name="responsive2value"
+			type="text"
+			label="COM_PAGEBUILDERCK_RESPONSIVE2_LABEL"
+			default="480"
+		/>
+		<field
+			name="responsive1value"
+			type="text"
+			label="COM_PAGEBUILDERCK_RESPONSIVE1_LABEL"
+			default="320"
+		/>
+		<field
+			name="responsiverange"
+			type="list"
+			label="CK_RESPONSIVE_RANGE_LABEL"
+			description="CK_RESPONSIVE_RANGE_DESC"
+			default="reducing"
+		>
+			<option value="between">CK_RESPONSIVE_BETWEEN</option>
+			<option value="reducing">CK_RESPONSIVE_REDUCING</option>
+		</field>
+	</fieldset>
+	<fieldset name="optimization"
+		label="COM_PAGEBUILDERCK_OPTIMIZATION_LABEL"
+	>
+		<field
+			name="compile"
+			type="radio"
+			label="COM_PAGEBUILDERCK_COMPILE_LABEL"
+			description="COM_PAGEBUILDERCK_COMPILE_DESC"
+			default="0"
+			class="btn-group"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field
+			name="lazy_loading"
+			type="radio"
+			label="COM_PAGEBUILDERCK_IMAGE_LAZY_LOADING_LABEL"
+			description="COM_PAGEBUILDERCK_IMAGE_LAZY_LOADING_DESC"
+			default="0"
+			class="btn-group"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+	</fieldset>
+	
+	<fieldset name="thirdpartyintegration"
+		label="COM_PAGEBUILDERCK_INTEGRATION_LABEL"
+	>
+		<field
+			name="integrationarticlespacer"
+			type="spacer"
+			label="COM_PAGEBUILDERCK_ARTICLE_INTEGRATION_LABEL"
+			class="nav-header"
+		/>
+		<field
+			name="forcearticleeditor"
+			type="radio"
+			label="COM_PAGEBUILDERCK_FORCE_ARTICLE_EDITOR_LABEL"
+			description="COM_PAGEBUILDERCK_FORCE_ARTICLE_EDITOR_DESC"
+			default="0"
+			class="btn-group"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+		</field>
+		<field
+			name="integrationthirdpartyspacer"
+			type="spacer"
+			label="COM_PAGEBUILDERCK_THIRDPARTY_INTEGRATION_LABEL"
+			class="nav-header"
+		/>
+		<field
+			name="integration_com_djcatalog2_item"
+			type="radio"
+			label="COM_PAGEBUILDERCK_DJCATALOG2"
+			default="0"
+			class="btn-group"
+		>
+			<option value="0">JNO</option>
+			<option value="1">JYES</option>
+			<option value="2">COM_PAGEBUILDERCK_FORCE</option>
+		</field>
+	</fieldset>
+	<fieldset name="permissions"
+		description="JCONFIG_PERMISSIONS_DESC"
+		label="JCONFIG_PERMISSIONS_LABEL"
+	>
+
+	<field name="rules" type="rules"
+		component="com_pagebuilderck"
+		filter="rules"
+		validate="rules"
+		label="JCONFIG_PERMISSIONS_LABEL"
+		section="component" />
+	</fieldset>
+
+</config>

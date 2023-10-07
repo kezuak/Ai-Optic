@@ -1,0 +1,133 @@
+/**
+ * @name		Page Builder CK
+ * @package		com_pagebuilderck
+ * @copyright	Copyright (C) 2015. All rights reserved.
+ * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ * @author		Cedric Keiflin - https://www.template-creator.com - https://www.joomlack.fr
+ */
+
+body {
+	left: 0 !important;
+}
+
+.tck-edition {
+	min-height: 50px;
+	margin: 2px;
+	border: 1px dashed grey;
+	position: relative;
+}
+
+.tck-editing {
+	min-height: 30px;
+	margin: 2px;
+	background: cadetblue;
+	text-align: center;
+}
+
+.tck-more {
+	height: 20px;
+	text-align: center;
+	font-family: Segoe UI, sans-serif;
+	line-height: 1.2;
+	padding: 3px 5px 3px 5px;
+	display: block !important;
+	border-radius: 3px;
+	background: seagreen;
+	box-sizing: content-box;
+	color: #fff;
+	font-size: 15px;
+	margin: 2px;
+	cursor: pointer;
+}
+
+.tck-more:hover {
+	background: #1C3D5C;
+}
+
+[data-type="mod_pagebuilderck"] .tck-module-toolbar {
+	background: seagreen;
+}
+
+.tck-module[data-type="mod_pagebuilderck"]:before {
+	border: 2px solid seagreen;
+}
+
+[data-type="mod_pagebuilderck"] .tck-module-toolbar-button {
+	background: seagreen;
+}
+
+/*
+* Degraded mode if modules manager is not present
+*/
+.tck-module-pbck {
+	position: relative;
+	margin: 2px;
+}
+
+.tck-module-pbck:before {
+	content: " ";
+	font-size: 14px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	text-aign: center;
+	font-family: Segoe UI, sans-serif;
+	line-height: 1.2;
+	padding: 3px 5px;
+	display: block !important;
+	border-radius: 3px;
+	border: 2px solid #2E5A84;
+	opacity: 0.8;
+	pointer-events: none;
+	box-sizing: content-box;
+}
+
+.tck-module-toolbar-pbck .tck-module-toolbar-type {
+	font-size: 11px;
+}
+
+.tck-module-toolbar-pbck .tck-module-toolbar-id {
+	position: absolute;
+	background: rgba(0,0,0, 0.5);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 14px;
+	text-align: center;
+	line-height: 25px;
+	font-weight: bold;
+	width: 30px;
+	border-radius: 3px 0 0 0;
+}
+
+.tck-module-toolbar-pbck {
+	position: relative;
+	min-height: 20px;
+	text-align: left;
+	font-family: Segoe UI, sans-serif;
+	line-height: 1.2;
+	padding: 3px 5px 3px 35px;
+	margin: 0;
+	display: block !important;
+	border-radius: 3px 3px 0 0;
+	background: #2E5A84;
+	box-sizing: content-box;
+	color: #fff;
+}
+
+#tckeditioniframe {
+	width: 100%;
+	border: 0;
+	height: calc(100vh - 75px);
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+div.menuck {
+	z-index: 990;
+}

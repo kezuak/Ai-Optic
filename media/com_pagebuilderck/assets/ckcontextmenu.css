@@ -1,0 +1,95 @@
+/**
+ * @name		Context Menu CK
+ * @copyright	Copyright (C) 2020. All rights reserved.
+ * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ * @author		Cedric Keiflin - https://www.template-creator.com - https://www.joomlack.fr
+ */
+
+/* context menu */
+
+.context-menu-ck {
+	display: none;
+	position: absolute;
+	z-index: 10000;
+}
+
+.context-menu-ck ul {
+	padding: 12px 0;
+	width: 240px;
+	background-color: #fff;
+	border: solid 1px #dfdfdf;
+	box-shadow: 1px 1px 2px #cfcfcf;
+}
+
+.context-menu-ck--active {
+	display: block;
+}
+
+.context-menu-ck__items {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.context-menu-ck__item {
+	display: block;
+	margin-bottom: 4px;
+	position: relative;
+}
+
+.context-menu-ck__item:last-child {
+	margin-bottom: 0;
+}
+
+.context-menu-ck__link {
+	display: block;
+	padding: 4px 12px;
+	color: #0066aa;
+	text-decoration: none;
+}
+
+.context-menu-ck__link:hover,
+.context-menu-ck__item.active > .context-menu-ck__link:first-child {
+	color: #fff;
+	background-color: #0066aa;
+	text-decoration: none;
+}
+
+.context-menu-ck > ul > li {
+	position: relative;
+}
+
+.context-menu-ck ul ul {
+	position: absolute;
+	display: none;
+	/*opacity: 0;*/
+	left: 230px;
+	top: -25px;
+	width: 240px;
+}
+
+.context-menu-ck:not(.context-menu-ck__submenuopened) li:hover > ul {
+	display: block;
+	/*opacity: 1;*/
+}
+
+
+.context-menu-ck__item-styles-copy, .context-menu-ck__item-styles-paste {
+	position: absolute;
+	right: 25px;
+	top: 0;
+	border: 1px solid #06a;
+	padding: 1px 3px;
+	border-radius: 3px;
+	margin: 2px;
+}
+
+.context-menu-ck__item-styles-paste {
+	right: 3px;
+}
+
+.context-menu-ck__item > a:hover:first-child ~ a:not(:hover) {
+	text-shadow: none;
+	color: #fff;
+	border-color: #fff;
+}

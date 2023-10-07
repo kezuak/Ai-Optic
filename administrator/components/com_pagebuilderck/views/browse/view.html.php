@@ -1,0 +1,34 @@
+<?php
+/**
+ * @name		Page Builder CK
+ * @package		com_pagebuilderck
+ * @copyright	Copyright (C) 2015. All rights reserved.
+ * @license		GNU General Public License version 2 or later; see LICENSE.txt
+ * @author		Cedric Keiflin - https://www.template-creator.com - https://www.joomlack.fr
+ */
+
+// No direct access
+defined('_JEXEC') or die;
+
+use Pagebuilderck\CKView;
+use Pagebuilderck\CKfof;
+
+class PagebuilderckViewBrowse extends CKView {
+
+	function display($tpl = null) {
+		$user = JFactory::getUser();
+		$authorised = ($user->authorise('core.create', 'com_pagebuilderck') || (count($user->getAuthorisedCategories('com_pagebuilderck', 'core.create'))));
+
+		if ($authorised !== true)
+		{
+			throw new Exception(JText::_('JERROR_ALERTNOAUTHOR'), 403);
+			return false;
+		}
+
+		// load the items
+		require_once PAGEBUILDERCK_PATH . '/helpers/ckbrowse.php';
+		$this->items = CKBrowse::getItemsList();
+
+		parent::display($tpl);
+	}
+}

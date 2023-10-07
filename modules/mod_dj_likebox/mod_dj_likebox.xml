@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5.0" client="site" method="upgrade">
+	<name>DJ-LikeBox</name>
+	<creationDate>Novermber 2017</creationDate>	
+	<author>DJ-Extensions.com</author>
+	<copyright>Copyright (C) 2012-2017 DJ-Extensions.com, All rights reserved.</copyright>
+	<license> http://www.gnu.org/licenses GNU/GPL</license>
+	<authorEmail>contact@dj-extensions.com</authorEmail>
+	<authorUrl>http://dj-extensions.com</authorUrl>
+	<version>3.1</version>
+	<description>MOD_DJLIKEBOX_DESCRIPTION</description>
+	<files>
+		<filename module="mod_dj_likebox">mod_dj_likebox.php</filename>
+		<filename>index.html</filename>
+		<filename>helper.php</filename>
+		<folder>fields</folder>
+		<folder>assets</folder>
+		<folder>language</folder>
+		<folder>tmpl</folder>
+	</files>
+	<updateservers>
+		<server type="extension" priority="1" name="DJ-LikeBox Module">https://dj-extensions.com/index.php?option=com_ars&amp;view=update&amp;task=stream&amp;format=xml&amp;id=25</server>
+	</updateservers>
+	<config>
+		<fields name="params" addfieldpath="/modules/mod_dj_likebox/fields">
+		
+			<fieldset name="basic">
+			
+				<field name="href" type="text" class="input-xlarge" default="https://www.facebook.com/djextensions/" 
+					label="MOD_DJLIKEBOX_HREF" description="MOD_DJLIKEBOX_HREF_DESC" hint="MOD_DJLIKEBOX_HREF_DESC" />
+				
+				<field type="djspacer" label="MOD_DJLIKEBOX_FB_SDK_OPTIONS" description="MOD_DJLIKEBOX_FB_SDK_OPTIONS_DESC" />
+				<field name="facebook_sdk" type="radio" class="btn-group" default="1" label="MOD_DJLIKEBOX_FB_SDK">
+				    <option value="0">JNO</option>
+				    <option value="1">JYES</option>
+				</field>
+				<field name="appid" type="text" default="" label="MOD_DJLIKEBOX_APPID" description="MOD_DJLIKEBOX_APPID_DESC" hint="MOD_DJLIKEBOX_APPID_HINT" />
+				
+				<field type="djspacer" label="MOD_DJLIKEBOX_PAGE_PLUGIN_OPTIONS" description="MOD_DJLIKEBOX_PAGE_PLUGIN_OPTIONS_DESC" />
+				<field name="width" type="text" default="" label="MOD_DJLIKEBOX_WIDTH" description="MOD_DJLIKEBOX_WIDTH_DESC" hint="MOD_DJLIKEBOX_WIDTH_HINT" />
+				<field name="height" type="text" default="" label="MOD_DJLIKEBOX_HEIGHT" description="MOD_DJLIKEBOX_HEIGHT_DESC" hint="MOD_DJLIKEBOX_HEIGHT_HINT" />
+				<field name="tabs" type="list" default="timeline" label="MOD_DJLIKEBOX_TABS" description="MOD_DJLIKEBOX_TABS_DESC" multiple="true">
+					<option value="timeline">MOD_DJLIKEBOX_TABS_TIMELINE</option>
+					<option value="events">MOD_DJLIKEBOX_TABS_EVENTS</option>
+					<option value="messages">MOD_DJLIKEBOX_TABS_MESSAGES</option>
+				</field>
+				<field name="hide_cover" type="radio" class="btn-group" default="0" label="MOD_DJLIKEBOX_HIDE_COVER" description="MOD_DJLIKEBOX_HIDE_COVER_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="show_facepile" type="radio" class="btn-group" default="1" label="MOD_DJLIKEBOX_SHOW_FACEPILE" description="MOD_DJLIKEBOX_SHOW_FACEPILE_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="hide_cta" type="radio" class="btn-group" default="0" label="MOD_DJLIKEBOX_HIDE_CTA" description="MOD_DJLIKEBOX_HIDE_CTA_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="small_header" type="radio" class="btn-group" default="0" label="MOD_DJLIKEBOX_SMALL_HEADER" description="MOD_DJLIKEBOX_SMALL_HEADER_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field name="adapt" type="radio" class="btn-group" default="1" label="MOD_DJLIKEBOX_ADAPT" description="MOD_DJLIKEBOX_ADAPT_DESC">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				
+			</fieldset>
+			
+			<fieldset
+				name="advanced">
+				<field
+					name="layout"
+					type="modulelayout"
+					label="JFIELD_ALT_LAYOUT_LABEL"
+					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+				<field
+					name="moduleclass_sfx"
+					type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field
+					name="cache"
+					type="list"
+					default="1"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC">
+					<option
+						value="1">JGLOBAL_USE_GLOBAL</option>
+					<option
+						value="0">COM_MODULES_FIELD_VALUE_NOCACHING</option>
+				</field>
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+	
+</extension>
